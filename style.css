@@ -51,7 +51,7 @@ header {
     cursor: pointer;
 }
 
-.header-nav-item:hover {
+.hover:hover {
     color: #bdae82;
 }
 

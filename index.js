@@ -30,7 +30,8 @@ function switcher(s) {
     audio.play()
   }
   for (const i of switchButtons) {
-    i.style.color = 'white'
+    i.style.color = ''
+    i.classList.add('hover')
   }
   document.querySelector('.' + s).style.color = '#bdae82'
 }
