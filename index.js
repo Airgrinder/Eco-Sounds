@@ -5,6 +5,7 @@ const main = document.querySelector('main')
 const audio = new Audio()
 
 
+let currentSound = ''
 let isPlay = false
 audio.src = 'assets/audio/forest.mp3'
 
@@ -28,7 +29,13 @@ function switcher(s) {
   if (isPlay) {
     audio.play()
   }
+  for (const i of switchButtons) {
+    i.style.color = 'white'
+  }
+  document.querySelector('.' + s).style.color = '#bdae82'
 }
+
+
 
 for (const button of switchButtons) {
   button.addEventListener('click', () => switcher(button.classList[1]))
